@@ -1,0 +1,22 @@
+{
+  "name": "comma",
+  "version": "0.1.0",
+  "private": true,
+  "description": "촌스테이 - 백엔드(FastAPI) + 모바일(Expo) 동시 실행 오케스트레이터",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n api,app -c blue,green \"npm:dev:api\" \"npm:dev:app\"",
+    "dev:api": "node scripts/run-backend.mjs",
+    "dev:app": "npm --prefix mobile run start",
+    "dev:app:android": "npm --prefix mobile run android",
+    "dev:app:ios": "npm --prefix mobile run ios",
+    "setup:mobile": "npm --prefix mobile install",
+    "typecheck": "npm --prefix mobile run typecheck",
+    "postinstall": "npm --prefix mobile install"
+  },
+  "devDependencies": {
+    "concurrently": "9.1.0"
+  }
+}

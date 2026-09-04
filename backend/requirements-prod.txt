@@ -1,0 +1,7 @@
+# 운영(AWS) 전용:  pip install -r requirements-prod.txt
+-r requirements.txt
+# AWS RDS MySQL 8 의 기본 인증(caching_sha2_password) 에 필요
+cryptography==43.0.3
+# 프로덕션 ASGI 서버
+uvicorn[standard]==0.32.1
+gunicorn==23.0.0

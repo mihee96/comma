@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "Comma",
+    "slug": "comma",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "comma",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.comma.app"
+    },
+    "android": {
+      "package": "com.comma.app"
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

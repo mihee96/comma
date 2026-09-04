@@ -1,0 +1,17 @@
+# 코어 의존성 (직접 사용). 팀 재현성을 위해 정확한 버전으로 고정합니다.
+# 패키지를 추가/변경하면 이 파일을 직접 수정하고 PR 로 공유하세요.
+#
+#   python -m venv .venv           (시스템 Python 3.12 로. 다른 venv 활성화 상태 아님)
+#   .venv\Scripts\Activate.ps1
+#   pip install -r requirements.txt
+#
+fastapi==0.115.14
+uvicorn==0.32.1
+pydantic[email]==2.10.6
+pydantic-settings==2.8.1
+SQLAlchemy==2.0.52
+alembic==1.14.1
+PyMySQL==1.1.2          # MySQL 드라이버 (순수 파이썬)
+PyJWT==2.9.0
+passlib==1.7.4          # pbkdf2_sha256 해시 (순수 파이썬)
+python-multipart==0.0.20

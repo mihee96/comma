@@ -1,0 +1,5 @@
+# 개발/테스트 전용:  pip install -r requirements-dev.txt
+-r requirements.txt
+pytest==8.3.5
+httpx==0.28.1
+watchfiles==0.24.0     # uvicorn --reload 파일 감시 (없으면 폴링으로 폴백)
